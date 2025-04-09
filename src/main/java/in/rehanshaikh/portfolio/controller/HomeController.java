@@ -14,7 +14,7 @@ public class HomeController {
 
     @GetMapping("/download-resume")
     public ResponseEntity<Resource> downloadResume() {
-        Resource resource = new ClassPathResource("static/assets/files/rehan.pdf");
+        Resource resource = new ClassPathResource("static/assets/files/Rehan.pdf");
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_PDF)
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"rehan_resume.pdf\"")
