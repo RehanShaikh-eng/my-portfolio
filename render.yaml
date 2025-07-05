@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: your-portfolio
-    env: java
-    buildCommand: ./mvnw clean package
-    startCommand: java -jar target/*.jar
